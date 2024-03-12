@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The newest doxxing service as of 2024.">
+
+  <meta property="og:title" content="script-bin">
+  <meta property="og:description" content="The newest doxxing service as of 2024.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1165849016408481792/1175220956340424796/CexOmS7.png?ex=656a70ce&is=6557fbce&hm=03c08dc39eb75dd3d8098d30d84b587fea20da460420efb7849522a8ad1027ba&" />
+  <meta name="twitter:title" content="ScriptBin">
+  <meta name="twitter:description" content="The newest doxxing service as of 2024.">
+  <meta name="theme-color" content="#979C9F">
+  <link rel="stylesheet" type="text/css" href="other.css">
+
+  <style>
+    #card-container {
+      min-width: 200px;
+      min-height: 60px;
+      max-width: 400px;
+      background-color: #181818;
+    }
+
+    #pastes-text {
+      color: #757575;
+    }
+
+    #app {
+      background-color: #080808;
+      position: relative;
+    }
+
+    #overlay-text {
+      position: absolute;
+      top: 6%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 17px;
+      user-select: none;
+      pointer-events: none;
+      white-space: pre;
+      overflow-wrap: break-word;
+      z-index: -1;
+      font-family: 'Source Code Pro', monospace;
+      font-weight: 400;
+      max-width: 100%;
+      animation: rainbow 5s linear infinite;
+    }
+
+    #card-container .text-ti {
+      font-size: 0.9rem;
+    }
+
+    @keyframes rainbow {
+      0% {
+        color: #ff0000;
+      }
+
+      16.666% {
+        color: #ff9900;
+      }
+
+      33.333% {
+        color: #ffff00;
+      }
+
+      50% {
+        color: #00ff00;
+      }
+
+      66.666% {
+        color: #0000ff;
+      }
+
+      83.333% {
+        color: #9900ff;
+      }
+
+      100% {
+        color: #ff0000;
+      }
+    }
+    .btn{
+        background-color: white;
+        
+    }
+  </style>
+
+  <div class="bg-blue-400 text-gray-800 h-10 flex items-center justify-center cursor-pointer">
+    <a href="../index.html">
+    <span class="text-xs">Home</span>
+</a>
+<a href="https://discord.gg/xQBa6TmmBC" target="_blank">
+    <span class="text-xs">Join Discord</span>
+</a>
+<a href="https://google.com">
+    <span class="text-xs">Exit this website...</span>
+</a>
+
+  </div>
+
+  <title>scriptBin</title>
+  <link rel="icon"
+    href="https://cdn.discordapp.com/attachments/1165849016408481792/1175220956340424796/CexOmS7.png?ex=656a70ce&is=6557fbce&hm=03c08dc39eb75dd3d8098d30d84b587fea20da460420efb7849522a8ad1027ba&"
+    type="image/x-icon">
+</head>
+
+<body class="min-h-screen bg-black flex justify-center items-center">
+  
+
+    <button></button>
+
+  <h1>ScriptBin</h1>
+
+  <div id="overlay-text"></div>
+  <h1>ScriptBin</h1>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var overlayText = document.getElementById("overlay-text");
+
+      fetch("text.txt")
+        .then(response => response.text())
+        .then(text => {
+          overlayText.innerText = text;
+        })
+        .catch(error => {
+          console.error("Error loading text:", error);
+        });
+    });
+  </script>
+</body>
+
+</html>
