@@ -107,21 +107,7 @@
 
   <div id="overlay-text"></div>
   <h1>ScriptBin</h1>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var overlayText = document.getElementById("overlay-text");
 
-      fetch("text.txt")
-        .then(response => response.text())
-        .then(text => {
-          overlayText.innerText = text;
-        })
-        .catch(error => {
-          console.error("Error loading text:", error);
-        });
-    });
-  </script>
 </body>
 
 </html>
