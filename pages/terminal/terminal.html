@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriptBin   -    Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="https://rxpzpentium.github.io/ScriptBin/">
+  <button>  GO BACK...</button>
+  </a>
+    <div class="terminal">
+        <div class="terminal-header">
+            Scriptbin Terminal
+        </div>
+        <div class="terminal-body">
+            <p>Welcome to scriptbin Terminal</p>
+            <p>Enter a command:</p>
+            <input type="text" id="commandInput" onkeydown="handleCommand(event)">
+            <div id="output"></div>
+        </div>
+      <div class="developer-console">
+      <div class="console-header">
+          Developer Console
+      </div>
+      <div class="console-body" id="consoleBody">
+          <!-- Console output will be displayed here -->
+      </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

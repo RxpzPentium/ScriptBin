@@ -1,0 +1,46 @@
+body {
+    font-family: monospace;
+    background-color: #000;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+}
+
+.terminal {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #333;
+    color: #00ff00;
+    padding: 10px;
+}
+
+.terminal-body {
+    padding: 10px;
+}
+
+.terminal-body p {
+    margin: 5px 0;
+}
+.developer-console {
+    width: 30%;
+    background-color: #333;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+.console-header {
+    background-color: #000;
+    color: #00ff00;
+    padding: 10px;
+    text-align: center;
+}
