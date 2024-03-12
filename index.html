@@ -16,7 +16,16 @@
   <meta name="twitter:description" content="view the latest pwns or view others">
   <meta name="theme-color" content="#979C9F">
   <link rel="stylesheet" type="text/css" href="other.css">
+<script>
+        const token = Math.random().toString(36).substring(2);
+      
+      // Set the token in a cookie
+      document.cookie = `token=${token}`;
+      
+      return token;
+    }
 
+</script>
   <style>
     #card-container {
       min-width: 200px;
